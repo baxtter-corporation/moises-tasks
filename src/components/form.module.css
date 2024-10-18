@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.camposContainer h1 {
+    color: #b9b9fd;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.camposContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    width: 600px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px #5555556c;
+}
+
+.camposContainer input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1.5px solid #b9b9fd;
+    color: #b9b9fd;
+}
+
+.camposContainer input:focus{
+    outline: none;
+}
+
+.camposContainer input::placeholder {
+    color: #b9b9fd;
+}
+
+.camposContainer textarea {
+    color: #b9b9fd;
+    border: 1.5px solid #b9b9fd;
+    width: 50%;
+    padding: 10px;
+}
+
+.camposContainer textarea::placeholder {
+    color: #b9b9fd;
+}
+
+.camposContainer textarea:focus {
+    outline: none;
+}
+
+.btn {
+    color: #fff;
+    background-color: #b9b9fd;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;  
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: #b9b9fdd4;
+}
