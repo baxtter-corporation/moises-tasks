@@ -20,8 +20,17 @@ export function useGetTelephone(endpoint: string) {
                 console.log(err)
             }
         }, [])
+
+        const handleDelete = async (id: string) => {
+            try {
+                await axios.delete(`${url}telephone/${id}`);
+                setDataList((prevlist: any) => dataList?.filter((item: any) => item.id !== id))
+            } catch (err) {
+                console.log(err)
+            }
+        }
         
-        return {dataList}
+        return {dataList, handleDelete}
 }
 
 export function useGetTelephoneTodEdit(endpoint: string) {
@@ -42,6 +51,7 @@ export function useGetTelephoneTodEdit(endpoint: string) {
             console.log(err)
         }
     }, [])
+
     
     return {dataList}
 }

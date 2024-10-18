@@ -28,6 +28,8 @@ export function useUpdateTelephone(id: string | undefined) {
         } catch(err) {
             console.log(err)
         }
+
+        console.log(id)
     }
 
     return{
